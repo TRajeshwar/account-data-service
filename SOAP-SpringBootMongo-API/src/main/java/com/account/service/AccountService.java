@@ -2,7 +2,6 @@ package com.account.service;
 
 
 import java.util.GregorianCalendar;
-import java.util.List;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
@@ -18,9 +17,7 @@ import com.account.repository.AccountRepository;
 @Service
 public class AccountService {
 
-//	@Autowired
-//	AccountRepository accountRepository;
-	
+
 	@Autowired
 	AccountRepository accountRepository;
 
@@ -29,9 +26,7 @@ public class AccountService {
 	}
 
 	public AccountInfo getAccountDetailsById(AccountRequest  acc) throws DatatypeConfigurationException {
-//		List<Account> accountList= (List<Account>) accountRepositoryImpl.findAll();
 		Account accountList=accountRepository.findByAccountNumber(acc.getAccountNumber());
-//		System.out.println(account1.toString());
 		AccountInfo accountInfo=new AccountInfo();		
 		XMLGregorianCalendar xmlDate = null;
 		

@@ -95,6 +95,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>account-data-service</finalName>
 	</build>
 
 </project>
