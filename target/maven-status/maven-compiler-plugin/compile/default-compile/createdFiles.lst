@@ -1,0 +1,11 @@
+com\account\acc_ws\AccountInfo.class
+com\account\config\WSConfig.class
+com\account\model\Account.class
+com\account\acc_ws\package-info.class
+com\account\SoapSpringBootApi1Application.class
+com\account\acc_ws\AccountRequest.class
+com\account\acc_ws\ObjectFactory.class
+com\account\service\AccountService.class
+com\account\repository\AccountRepository.class
+com\account\acc_ws\AccountResponse.class
+com\account\endpoint\AccountEndpoint.class
